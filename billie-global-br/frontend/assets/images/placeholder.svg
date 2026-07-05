@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#fafafa"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#e5e5e5"/>
+  <g fill="none" stroke="#111111" stroke-width="2">
+    <line x1="340" y1="220" x2="340" y2="280" />
+    <line x1="380" y1="200" x2="380" y2="300" />
+    <line x1="420" y1="230" x2="420" y2="270" />
+    <line x1="460" y1="210" x2="460" y2="290" />
+  </g>
+  <text x="400" y="340" font-family="Inter, sans-serif" font-size="16" fill="#8a8a8a" text-anchor="middle">
+    Billie Global BR
+  </text>
+</svg>
