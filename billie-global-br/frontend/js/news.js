@@ -76,8 +76,6 @@ function cardTemplate(item) {
       <h3>${item.title}</h3>
       <p>${item.summary}</p>
       <div class="meta-row">
-        <span>${item.author}</span>
-        <span class="dot"></span>
         <span>${formatDate(item.createdAt)}</span>
         <span class="dot"></span>
         <span>${item.readingTime} min de leitura</span>
@@ -130,8 +128,6 @@ function renderHome(news) {
       <a href="noticia.html?slug=${featured.slug}"><h1>${featured.title}</h1></a>
       <p>${featured.summary}</p>
       <div class="meta-row">
-        <span>${featured.author}</span>
-        <span class="dot"></span>
         <span>${formatDate(featured.createdAt)}</span>
         <span class="dot"></span>
         <span>${featured.readingTime} min de leitura</span>
@@ -197,13 +193,9 @@ function renderArticle(news) {
       <h1>${news.title}</h1>
       <p class="subtitle">${news.subtitle || ''}</p>
       <div class="meta-row">
-        <span>Por ${news.author}</span>
-        <span class="dot"></span>
         <span>${formatDate(news.createdAt)} às ${formatTime(news.createdAt)}</span>
         <span class="dot"></span>
         <span>${news.readingTime} min de leitura</span>
-        <span class="dot"></span>
-        <span>${(news.views || 0) + 1} visualizações</span>
       </div>
       ${news.image ? `<img class="article-image" src="${news.image}" alt="${news.title}" />` : ''}
       <div class="share-row">
