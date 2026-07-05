@@ -36,13 +36,13 @@ import {
 // SUBSTITUA pelos dados do SEU projeto Firebase:
 // -------------------------------------------------------------------
 const firebaseConfig = {
-  apiKey: 'COLOQUE_AQUI_SUA_API_KEY',
-  authDomain: 'seu-projeto.firebaseapp.com',
-  databaseURL: 'https://seu-projeto-default-rtdb.firebaseio.com',
-  projectId: 'seu-projeto',
-  storageBucket: 'seu-projeto.appspot.com',
-  messagingSenderId: 'COLOQUE_AQUI',
-  appId: 'COLOQUE_AQUI',
+  apiKey: "AIzaSyAdqAR-3gmsVw-_q6Df54f4uMDtICp7bVE",
+  authDomain: "billie-global-br-feed.firebaseapp.com",
+  databaseURL: "https://billie-global-br-feed-default-rtdb.firebaseio.com",
+  projectId: "billie-global-br-feed",
+  storageBucket: "billie-global-br-feed.firebasestorage.app",
+  messagingSenderId: "574955886081",
+  appId: "1:574955886081:web:8fe8b64bf77c437ff7d200"
 };
 // -------------------------------------------------------------------
 
