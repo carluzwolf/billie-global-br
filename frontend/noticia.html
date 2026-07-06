@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Billie Global BR</title>
+<meta name="description" content="Notícia do Billie Global BR" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<!-- Título, meta tags, Open Graph e JSON-LD são preenchidos dinamicamente
+     em tempo real por js/news.js (função renderArticle), a partir dos
+     dados da notícia carregados do Firebase. -->
+</head>
+<body data-page="article">
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="../index.html" class="logo">Billie Global BR</a>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#latest">Notícias</a></li>
+      <li><a href="pages/categorias.html">Categorias</a></li>
+      <li><a href="pages/sobre.html">Sobre</a></li>
+      <li><a href="pages/contato.html">Contato</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="search-trigger" aria-label="Pesquisar">
+        <i data-lucide="search"></i>
+      </button>
+      <button class="icon-btn" id="theme-toggle" aria-label="Alternar modo escuro">
+        <i data-lucide="moon"></i>
+      </button>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Abrir menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+
+    <div class="search-panel" id="search-panel">
+      <input type="search" id="search-input" class="search-input" placeholder="Pesquisar por título, categoria, tag ou autor..." />
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu-header">
+    <span class="logo">Billie Global BR</span>
+    <button class="icon-btn" id="mobile-menu-close" aria-label="Fechar menu">
+      <i data-lucide="x"></i>
+    </button>
+  </div>
+  <a href="../index.html">Home</a>
+  <a href="pages/categorias.html">Categorias</a>
+  <a href="pages/sobre.html">Sobre</a>
+  <a href="pages/contato.html">Contato</a>
+</div>
+
+<main id="article-root">
+  <!-- Preenchido dinamicamente via js/news.js (renderArticle) com base
+       no parâmetro ?slug= da URL -->
+  <div class="container" style="padding-block: var(--space-9); text-align:center; color: var(--color-text-muted);">
+    Carregando notícia...
+  </div>
+</main>
+
+<footer class="site-footer container">
+  <div class="footer-grid">
+    <div>
+      <h4>Billie Global BR</h4>
+      <p>Comunidade brasileira de fãs dedicada a levar notícias, fotos e vídeos sobre Billie Eilish em tempo real.</p>
+    </div>
+    </div>
+  <h4>Comunidade</h4>
+  <a href="https://instagram.com/billieglobalbr" target="_blank" rel="noopener noreferrer">Instagram @billieglobalbr</a>
+  <a href="https://t.me/billieglobalbr" target="_blank" rel="noopener noreferrer">Canal do Telegram</a>
+  <a href="https://chat.whatsapp.com/Forh5ttRaAIJ6dZPrhgVXf" target="_blank" rel="noopener noreferrer">Grupo do WhatsApp</a>
+  <a href="https://whatsapp.com/channel/0029VavaVBp5kg77PEh3Bq2g" target="_blank" rel="noopener noreferrer">Canal do WhatsApp</a>
+</div>
+    <div>
+      <h4>Fundador</h4>
+      <p>Carlos Henrique</p>
+      <a href="https://instagram.com/carluzsnt" target="_blank" rel="noopener noreferrer">Instagram @carluzsnt</a>
+    </div>
+  </div>
+  <p class="footer-disclaimer">
+    Billie Global BR é uma comunidade independente de fãs e não possui ligação oficial com Billie Eilish ou sua equipe.
+  </p>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>window.addEventListener('DOMContentLoaded', () => lucide.createIcons());</script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
