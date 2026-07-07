@@ -26,7 +26,7 @@ const env = {
       model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
     },
     gemini: {
-      apiKey: process.env.GEMINI_API_KEY || 'AQ.Ab8RN6L-IxansAR6A-m-Y_5-j2PRU1sSlZbQeiMV5Tap6o6H2Q',
+      apiKey: process.env.GEMINI_API_KEY || 'AIzaSyDA3LQb1cwqtTdH0l3zQDUiUKjqwLjwX-Y',
       model: process.env.GEMINI_MODEL || 'gemini-1.5-flash',
     },
   },
