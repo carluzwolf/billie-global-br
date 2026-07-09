@@ -29,8 +29,18 @@ async function processIncomingPost(normalizedPost) {
     return null;
   }
 
-  logger.info('[newsProcessor] Enviando conteúdo para a IA...');
-  const generated = await aiService.generateNews(text);
+  logger.info('[newsProcessor] IA desativada. Publicando texto original.');
+
+const generated = {
+  title: text.split('\n')[0].slice(0, 120),
+  subtitle: '',
+  summary: text.slice(0, 180),
+  content: text.replace(/\n/g, '<br>'),
+  category: 'Billie Global BR',
+  tags: [],
+  slug: `news-${Date.now()}`,
+  readingTime: Math.max(1, Math.ceil(text.split(/\s+/).length / 200))
+};
 
   const now = new Date();
 
