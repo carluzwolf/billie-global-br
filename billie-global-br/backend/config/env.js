@@ -27,7 +27,7 @@ const env = {
     },
     gemini: {
       apiKey: process.env.GEMINI_API_KEY || 'AIzaSyDA3LQb1cwqtTdH0l3zQDUiUKjqwLjwX-Y',
-      model: process.env.GEMINI_MODEL || 'gemini-1.5-flash',
+      model: process.env.GEMINI_MODEL || 'gemini-2.5-flash',
     },
   },
 
